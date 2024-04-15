@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Implementation</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <!-- Start Header Structure -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/imgs/logo.png" alt="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search" />
+            <label for="search-input">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </label>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header Structure -->
+
+    <!-- Start main page Structure -->
+    <main>
+      <!-- Start Hero-image -->
+      <div class="hero-image">
+        <div class="container">
+          <h1>Welcome to Three Star Media</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            eaque magnam soluta at sapiente voluptate debitis molestias
+            veritatis repellat fugiat minus doloremque minima rerum ullam,
+            tenetur velit! Accusantium, cupiditate! Nostrum!
+          </p>
+          <a href="#">
+            <span>Connect with us</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="currentColor"
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- End Hero-image -->
+
+      <!-- Start AboutUs Structure -->
+      <div class="about-us" id="about">
+        <div class="container">
+          <div class="about-image">
+            <img src="./assets/imgs/about-us.jpg" alt="aboutUs" />
+          </div>
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p class="mid-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              doloremque voluptatem ipsam mollitia dignissimos laudantium,
+              temporibus optio minima, necessitatibus molestiae quod quidem
+              animi et voluptates odio, consequatur facilis voluptas nisi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Necessitatibus, eveniet! Officiis excepturi sequi culpa blanditiis
+              laborum distinctio, ea debitis optio impedit quae, neque
+              voluptatem ipsam sed laboriosam amet corrupti tenetur.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End AboutUs Structure -->
+
+      <!-- Start Our Services Structure -->
+      <div class="service-section" id="services">
+        <div class="container">
+          <h2>Our Services</h2>
+          <div class="cards-first-side">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/imgs/digital.jpg" alt="img-card" />
+              </div>
+              <div class="card-body">
+                <h3>Digital Transformation</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  aperiam laborum recusandae ipsum amet dolor provident iste
+                  incidunt vero quam molestiae, iusto dignissimos excepturi quo
+                  sequi qui nam beatae odit.
+                </p>
+                <button>
+                  <span>Digital Plans</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="currentColor"
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/imgs/marketing.jpg" alt="img-card" />
+              </div>
+              <div class="card-body">
+                <h3>Marketing</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  aperiam laborum recusandae ipsum amet dolor provident iste
+                  incidunt vero quam molestiae, iusto dignissimos excepturi quo
+                  sequi qui nam beatae odit.
+                </p>
+                <button>
+                  <span>Marketing Plans</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="currentColor"
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cards-second-side">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/imgs/video.jpg" alt="img-card" />
+              </div>
+              <div class="card-body">
+                <h3>Video Production</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  aperiam laborum recusandae ipsum amet dolor provident iste
+                  incidunt vero quam molestiae, iusto dignissimos excepturi quo
+                  sequi qui nam beatae odit.
+                </p>
+                <button>
+                  <span>Video Plans</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="currentColor"
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/imgs/web.jpg" alt="img-card" />
+              </div>
+              <div class="card-body">
+                <h3>Web Development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  aperiam laborum recusandae ipsum amet dolor provident iste
+                  incidunt vero quam molestiae, iusto dignissimos excepturi quo
+                  sequi qui nam beatae odit.
+                </p>
+                <button>
+                  <span>Web Plans</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="currentColor"
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/imgs/print.jpg" alt="img-card" />
+              </div>
+              <div class="card-body">
+                <h3>Print</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  aperiam laborum recusandae ipsum amet dolor provident iste
+                  incidunt vero quam molestiae, iusto dignissimos excepturi quo
+                  sequi qui nam beatae odit.
+                </p>
+                <button>
+                  <span>Print Plans</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="currentColor"
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Our Services Structure -->
+
+      <!-- Start OurVision Structure -->
+      <div class="our-vision">
+        <div class="container">
+          <h2>Our Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
+            impedit corrupti voluptatum nihil exercitationem. Odio explicabo
+            aliquid doloribus! Eaque asperiores laudantium accusamus
+            exercitationem est nihil, alias commodi fugiat assumenda aut. A
+            excepturi saepe inventore quasi rerum amet voluptatum ducimus
+            reiciendis ratione, minima fugiat vitae, eligendi labore nihil
+            nobis? Sed, veniam tenetur. Corrupti, deserunt vitae! Esse officia
+            debitis accusantium porro minima! Atque quis nam aspernatur cumque
+            reiciendis unde sunt magni aliquam quibusdam quo? Sed quaerat
+            voluptates quas alias suscipit, ullam molestias repudiandae
+            perspiciatis similique nobis debitis accusantium? Dignissimos
+            quisquam unde modi!
+          </p>
+          <a href="#">
+            <span>Learn More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="currentColor"
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- End OurVision Structure -->
+
+      <!-- Start Team Structure -->
+      <div class="team-section" id="team">
+        <div class="container">
+          <h2>Our Team</h2>
+          <div class="member">
+            <div class="member-image">
+              <img src="./assets/imgs/john.jpg" alt="employee1" />
+            </div>
+            <div class="member-info">
+              <h2>John Doe</h2>
+              <span class="job-title">CEO and Co-owner</span>
+              <span class="line"></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores, voluptate molestias eveniet perspiciatis quae incidunt
+                molestiae explicabo culpa quaerat, nostrum minima. Quibusdam
+                saepe commodi beatae deserunt in reprehenderit, eum quam.
+                Perspiciatis odio voluptates maiores rerum nostrum, sint et
+                consectetur quidem hic ullam, aspernatur quasi impedit vel fugit
+                perferendis, cupiditate dolorum dicta quaerat suscipit iste
+                veniam cumque facere ad assumenda. Aliquid? Harum est architecto
+                iusto quas veritatis, voluptate molestias placeat asperiores
+                modi, vel sint aliquam error magni assumenda ullam
+                exercitationem excepturi, libero minus. Non, eos doloribus
+                itaque natus consequatur dicta est. Adipisci perspiciatis magni
+                dolorum autem eum explicabo delectus odit, voluptatem tempora.
+                Maiores sint possimus assumenda aliquam velit. Eius blanditiis
+                ea, nemo, tempora doloremque recusandae ratione dolorum
+                provident, sapiente minus repellendus! Sapiente quasi omnis
+                culpa magnam excepturi optio totam a, amet odio quo tempore
+                consectetur quis sit perspiciatis tempora dolores fuga
+                accusamus? Veniam dolorum consequatur iusto atque dolore
+                blanditiis modi explicabo!
+              </p>
+            </div>
+          </div>
+          <div class="member">
+            <div class="member-info">
+              <h2>Bob Rite</h2>
+              <span class="job-title">CFO and Co-owner</span>
+              <span class="line"></span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Maiores, voluptate molestias eveniet perspiciatis quae incidunt
+                molestiae explicabo culpa quaerat, nostrum minima. Quibusdam
+                saepe commodi beatae deserunt in reprehenderit, eum quam.
+                Perspiciatis odio voluptates maiores rerum nostrum, sint et
+                consectetur quidem hic ullam, aspernatur quasi impedit vel fugit
+                perferendis, cupiditate dolorum dicta quaerat suscipit iste
+                veniam cumque facere ad assumenda. Aliquid? Harum est architecto
+                iusto quas veritatis, voluptate molestias placeat asperiores
+                modi, vel sint aliquam error magni assumenda ullam
+                exercitationem excepturi, libero minus. Non, eos doloribus
+                itaque natus consequatur dicta est. Adipisci perspiciatis magni
+                dolorum autem eum explicabo delectus odit, voluptatem tempora.
+                Maiores sint possimus assumenda aliquam velit. Eius blanditiis
+                ea, nemo, tempora doloremque recusandae ratione dolorum
+                provident, sapiente minus repellendus! Sapiente quasi omnis
+                culpa magnam excepturi optio totam a, amet odio quo tempore
+                consectetur quis sit perspiciatis tempora dolores fuga
+                accusamus? Veniam dolorum consequatur iusto atque dolore
+                blanditiis modi explicabo!
+              </p>
+            </div>
+            <div class="member-image">
+              <img src="./assets/imgs/bob.jpg" alt="employee2" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Team Structure -->
+    </main>
+    <!-- End main page Structure -->
+
+    <!-- Start Contact Structure -->
+    <div class="container full-contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-section" id="contact">
+        <div class="contact-grid-item">
+          <h2>Send us a message</h2>
+          <form>
+            <label for="full-name">Full Name</label><br />
+            <input type="text" id="full-name" /><br />
+            <label for="email">Email</label><br />
+            <input type="text" id="email" /><br />
+            <label for="message">Message</label><br />
+            <textarea id="messag" cols="30" rows="10"></textarea><br />
+            <br />
+            <button>Send</button>
+            <br /><br />
+          </form>
+        </div>
+        <div class="map-grid-item">
+          <h2>Location</h2>
+          <div class="map-style">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90205.42606907088!2d11.368981623343304!3d45.04685409965598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477f00bf7ae8bb97%3A0xeac9c73f3429a485!2s45020%20Canda%2C%20Province%20of%20Rovigo%2C%20Italy!5e0!3m2!1sen!2sin!4v1711893399786!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="hours-grid-item">
+          <h2>Hours of operation</h2>
+          <div class="custom-table">
+            <div class="custom-row">
+              <div class="custom-col">Days</div>
+              <div class="custom-col">Hours</div>
+            </div>
+            <div class="custom-row">
+              <div class="custom-col">Monday - Friday</div>
+              <div class="custom-col">9 AM - 6 PM</div>
+            </div>
+            <div class="custom-row">
+              <div class="custom-col">Saturday - Sunday</div>
+              <div class="custom-col">Closed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Structure -->
+
+    <!-- Start Footer Section -->
+    <footer>
+      <div class="final-content">
+        <div class="container">
+          <p class="mb-8">&copy; Copyright Three Star Media, 2020</p>
+          <p>All images are taken from Unsplash</p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+  </body>
+</html>

@@ -4,25 +4,46 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Final project</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <header class="navbar">
     <div class="container">
       
-      <header>
+      
         <div class="logo">
           <img src="photos/logo.png" alt="logo" >
         </div>
         <nav>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Team</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-        </nav>
+        
         <div class="search-box">
-          <input type="text" placeholder="Search" >
+          <input type="text" id="search-box" placeholder="Search" >
+          <label for="search-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+              >
+              <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </label>
+      </div>
+    </nav>
+        
         </div>
       </header>
       
@@ -32,6 +53,8 @@
         <section>
         <!-- Start Hero-image -->
         <div class="hero-image">
+          <div class="container">
+            <img src="photos/main-banner.jpg" alt="main-banner" >
           <h1>Welcome to Three Star Media</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
@@ -39,20 +62,31 @@
             veritatis repellat fugiat minus doloremque minima rerum ullam,
             tenetur velit! Accusantium, cupiditate! Nostrum!
           </p>
-          <button>Connect with us</button>
+          <a href="#">
+            <span>Connect with us</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="currentColor"
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              />
+            </svg>
+          </a>
         </div>
+      </section>
         <!-- End Hero-image -->
-        </section>
+        
 
         
-        <div class="who we are">
+        <div class="who-we-are" id="about"></div>
           <div class="about-image">
+            <div class="container">
             <img src="photos/about-us.jpg" alt="about-image" >
           </div>
           <div class="about-text">
             <h3>About Us</h3>
             <!-- Start paragraph  -->
-            <p>
+            <p class="mid-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               doloremque voluptatem ipsam mollitia dignissimos laudantium,
               temporibus optio minima, necessitatibus molestiae quod quidem
@@ -71,12 +105,15 @@
         
 
         <!-- Start Our Services Structure -->
-        <div class="service-section">
+        <div class="container"></div>
+        <div class="service-section" id="services">
+          <h2>Our Services</h2>
           <div class="cards-first-side">
-            <div class="card-one">
+            <div class="card">
               <div class="card-photo">
                 <img src="photos/digital.jpg" alt="card-photo" >
               </div>
+              <div class="card-body">
               <h3>Digital Transformation</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -84,12 +121,22 @@
                 incidunt vero quam molestiae, iusto dignissimos excepturi quo
                 sequi qui nam beatae odit.
               </p>
-              <button>Digital Plans</button>
+              <button>
+                <span>Digital Plans</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    fill="currentColor"
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="card-two">
+            <div class="card">
               <div class="card-photo">
                 <img src="photos/marketing.jpg" alt="card-photo" >
               </div>
+              <div class="card-body">
               <h3>Marketing</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -97,14 +144,26 @@
                 incidunt vero quam molestiae, iusto dignissimos excepturi quo
                 sequi qui nam beatae odit.
               </p>
-              <button>Marketing Plans</button>
+              <button>
+                <span>Marketing Plans</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    fill="currentColor"
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  />
+                </svg>
+              </button>
+            
+          
             </div>
           </div>
           <div class="cards-second-side">
-            <div class="card-one">
+            <div class="card">
               <div class="card-photo">
                 <img src="photos/video.jpg" alt="img-card" >
               </div>
+              <div class="card-body">
               <h3>Video Production</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -112,12 +171,24 @@
                 incidunt vero quam molestiae, iusto dignissimos excepturi quo
                 sequi qui nam beatae odit.
               </p>
-              <button>Video Plans</button>
+              <button>
+                <span>Video Plans</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    fill="currentColor"
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="card-two">
+          
+            </div>
+            <div class="card">
               <div class="card-photo">
                 <img src="photos/web.jpg" alt="img-card" >
               </div>
+              <div class="card-body">
               <h3>Web Development</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -125,12 +196,25 @@
                 incidunt vero quam molestiae, iusto dignissimos excepturi quo
                 sequi qui nam beatae odit.
               </p>
-              <button>Web Plans</button>
+              <button>
+                <span>Web Plans</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    fill="currentColor"
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  />
+                </svg>
+              </button>
             </div>
-            <div class="card-three">
+          </div>
+
+            
+            <div class="card">
               <div class="card-photo">
                 <img src="photos/print.jpg" alt="img-card" >
               </div>
+              <div class="card-body">
               <h3>Print</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
@@ -138,14 +222,28 @@
                 incidunt vero quam molestiae, iusto dignissimos excepturi quo
                 sequi qui nam beatae odit.
               </p>
-              <button>Print Plans</button>
+              <button>
+                <span>Print Plans</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    fill="currentColor"
+                    d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
+      </div>
+    </div>
         <!-- End Our Services Structure -->
 
       
         <div class="our-vision">
+          <div class="container">
+            <img src="photos/vision.jpg" alt="our-vision">
+            <div class="overlay">
           <h3>Our Vision</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam
@@ -161,20 +259,34 @@
             perspiciatis similique nobis debitis accusantium? Dignissimos
             quisquam unde modi!
           </p>
-          <button>Learn More</button>
+          <a href="#">
+            <span>Learn More</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                fill="currentColor"
+                d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
         </div>
        
 
         <!-- Start Team Structure -->
-        <div class="our team">
-          <div class="member-one">
+        <div class="our-team" id="team"></div>
+          <div class="container">
+            <h2>Our Team</h2>
+          <div class="member">
             <div class="member-photo">
               <img src="photos/john.jpg" alt="employee1" >
             </div>
             <div class="member-info">
               <h2>John Doe</h2>
-              <span>CEO and Co-owner</span>
-              <hr >
+              <span class="job-name">CEO and Co-owner</span>
+              <span class="Underline"></span>
+              
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maiores, voluptate molestias eveniet perspiciatis quae incidunt
@@ -199,11 +311,13 @@
               </p>
             </div>
           </div>
-          <div class="member-two">
+          <div class="member">
             <div class="member-info">
+              <div class="member-photo">
+                <img src="photos/bob.jpg" alt="employee2" >
               <h2>Bob Rite</h2>
-              <span>CFO and Co-owner</span>
-              <hr >
+              <span class="job-name">CFO and Co-owner</span>
+              <span class="Underline"></span>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maiores, voluptate molestias eveniet perspiciatis quae incidunt
@@ -227,8 +341,8 @@
                 blanditiis modi explicabo!
               </p>
             </div>
-            <div class="member2-photo">
-              <img src="photos/bob.jpg" alt="employee2" >
+            <div class="member-photo">
+             
             </div>
           </div>
         </div>
@@ -237,10 +351,15 @@
       <!-- End main page Structure -->
 
       
-      <footer>
+      
+      <div class="contact-container-part">
+        <h2>Contact Us</h2>
         
-        <div class="contact">
+          <div class="contact-section" id="contact">
           <div class="message">
+            
+  
+          <h2>Send us a message</h2>
             <form>
               <label for="Full-name">Full name</label><br >
               <input type="text" id="Full-name" ><br >
@@ -253,32 +372,33 @@
               <br ><br >
             </form>
           </div>
-          <h2>Hours of operation</h2>
-      
-          <table class="border">
-            <thead>
-              <tr>
-                <th>Days</th>
-                <th>Hours</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Monday - Friday</td>
-                <td>9 AM - 6 PM</td>
-              </tr>
-              <tr>
-                <td>Saturday - Sunday</td>
-                <td>Closed</td>
-              </tr>
-            </tbody>
-          </table>
           <div class="map-style">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9444565900267!2d-75.75750062467009!3d45.3499334710723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711975029320!5m2!1sen!2sca"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-        
+        <div class="hours-grid-item">
+          <h2>Hours of operation</h2>
+      
+          <div class="custom-table">
+            <div class="custom-row">
+              <div class="custom-col">Days</div>
+              <div class="custom-col">Hours</div>
+            </div>
+            <div class="custom-row">
+              <div class="custom-col">Monday - Friday</div>
+              <div class="custom-col">9 AM - 6 PM</div>
+            </div>
+            <div class="custom-row">
+              <div class="custom-col">Saturday - Sunday</div>
+              <div class="custom-col">Closed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+         <footer>
         <div class="final-content">
+          <div class="container">
           <span>&copy; Copyright Three Star Media, 2020</span>
           <br >
           <br >

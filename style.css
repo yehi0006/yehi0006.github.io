@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 18px;
+    margin: 0 auto;
+}
+.about-image .about-text{
+    background-color: #ffe6ad;
+}
+.navbar {
+    background-color: #222222;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    width: 80px;
+}
+
+.navbar .logo img {
+    width: 100%;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar nav ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style-type: none;
+}
+
+.navbar nav ul a {
+    color: #c9890d;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+.navbar nav ul a.active {
+    background-color: #c9890d;
+    color: #222222;
+}
+
+.navbar .search-box {
+    display: flex;
+}
+
+.navbar .search-box input {
+    padding: 12px 4px;
+    height: 42px;
+}
+
+.navbar .search-box label {
+    padding: 8px;
+    height: 42px;
+    width: 42px;
+    border: 1px solid #c9890d;
+    color: #c9890d;
+    cursor: pointer;
+}
+
+.navbar .search-box svg {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .navbar .logo {
+        width: 100%;
+        background-color: #c9890d;
+        padding: 12px 0;
+    }
+
+    .navbar .logo img {
+        width: 70px;
+    }
+
+    .navbar nav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar nav ul li {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar nav ul a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar nav .search-box {
+        width: 100%;
+    }
+
+    .navbar nav .search-box input {
+        flex: 1;
+    }
+}
+
+.hero-image {
+    background-image: url('./imgs/main-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+}
+
+.hero-image .container {
+    background-color: #222222cc;
+}
+
+.hero-image h1 {
+    color: #fdfffd;
+    font-size: 86px;
+    line-height: 106px;
+}
+
+.hero-image p {
+    color: #fdfffd;
+    margin: 12px 0 8px 0;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.hero-image a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #c9890d;
+    color: #222222;
+    width: fit-content;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+
+.hero-image a svg {
+    width: 12px;
+}
+
+@media screen and (max-width: 800px) {
+    .hero-image h1 {
+        font-size: 36px;
+        line-height: 56px;
+    }
+
+    .hero-image p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+
+.about-us {
+    background-color: #ffe6ad;
+}
+
+.about-us .container {
+    display: flex;
+    gap: 12px;
+}
+
+.about-us .about-image {
+    width: calc(50% - 6px);
+}
+
+.about-us .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us .about-text {
+    width: calc(50% - 6px);
+}
+
+.about-us .about-text h2 {
+    font-size: 48px;
+}
+
+.about-us .about-text .mid-paragraph {
+    margin: 18px 0 12px 0;
+}
+
+@media screen and (max-width: 600px) {
+    .about-us .container {
+        flex-direction: column;
+    }
+
+    .about-us .about-image {
+        width: 100%;
+    }
+
+    .about-us .about-text {
+        width: 100%;
+    }
+
+    .about-us .about-text h2 {
+        font-size: 28px;
+    }
+}
+
+.service-section h2 {
+    font-size: 32px;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+.service-section .cards-first-side {
+    display: flex;
+    gap: 12px;
+}
+
+.service-section .cards-first-side .card {
+    width: calc(50% - 6px);
+}
+
+.service-section .card {
+    background-color: #ffe6ad;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-section .card>* {
+    width: 100%;
+}
+
+.service-section .card .card-image {
+    width: 100%;
+}
+
+.service-section .card .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-section .card .card-body {
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-section .card .card-body>* {
+    width: 100%;
+}
+
+.service-section .card h3 {
+    color: #222222;
+    margin: 12px 0;
+    font-size: 24px;
+}
+
+.service-section .card p {
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+.service-section .card button {
+    width: 100%;
+    padding: 18px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #222222;
+    color: #fdfffd;
+    margin-top: auto;
+}
+
+.service-section .card button svg {
+    width: 12px;
+}
+
+.cards-second-side {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.service-section .cards-second-side .card {
+    width: calc((100% - 24px) / 3);
+}
+
+@media screen and (max-width: 600px) {
+    .service-section .cards-first-side {
+        flex-direction: column;
+    }
+
+    .service-section .cards-first-side .card {
+        width: 100%;
+    }
+
+    .service-section .cards-second-side {
+        flex-direction: column;
+    }
+
+    .service-section .cards-second-side .card {
+        width: 100%;
+    }
+}
+
+.our-vision {
+    background-image: url('./imgs/vision.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our-vision h2 {
+    color: #fdfffd;
+}
+
+.our-vision p {
+    color: #fdfffd;
+    margin: 12px 0;
+}
+
+.our-vision a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 18px;
+    color: #fdfffd;
+    width: fit-content;
+    background-color: #222222;
+    text-decoration: none;
+}
+
+.our-vision a svg {
+    width: 12px;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    color: #222222;
+}
+
+.team-section .member {
+    display: flex;
+    background-color: #ffe6ad;
+    margin-top: 12px;
+}
+
+.team-section .member>* {
+    width: 50%;
+}
+
+.team-section .member-image {
+    display: flex;
+}
+
+.team-section .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-section .member-info {
+    padding: 12px;
+}
+
+.team-section .member-info h2 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+.team-section .member-info .job-title {
+    font-weight: bold;
+    color: #222222;
+}
+
+.team-section .member-info .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c9890d;
+}
+
+.team-section .member-info p {
+    margin-top: 12px;
+    color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+    .team-section .member {
+        flex-direction: column;
+    }
+
+    .team-section .member>* {
+        width: 100%;
+    }
+}
+
+.full-contact-section > h2 {
+    margin-bottom: 12px;
+    font-size: 36px;
+}
+
+.contact-section {
+    display: grid;
+    grid-template-areas:
+        'form map'
+        'hours hours';
+    gap: 24px 12px;
+}
+
+.contact-section h2 {
+    margin-bottom: 8px;
+}
+
+.contact-grid-item {
+    grid-area: form;
+}
+
+.contact-grid-item input,
+.contact-grid-item textarea {
+    padding: 8px;
+    border: 1px solid #222222;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.contact-grid-item textarea {
+    height: 120px;
+}
+
+.contact-grid-item button {
+    padding: 12px 36px;
+    background-color: #222222;
+    color: #c9890d;
+}
+
+.map-grid-item {
+    grid-area: map;
+}
+
+.map-grid-item iframe {
+    width: 100%;
+}
+
+.hours-grid-item {
+    grid-area: hours;
+}
+
+.custom-table {
+    background-color: #222222;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.custom-row {
+    width: 100%;
+    display: flex;
+    gap: 1px;
+}
+
+.custom-row:first-child .custom-col {
+    background-color: #ffe6ad;
+    text-align: center;
+}
+
+.custom-col {
+    padding: 12px;
+    background-color: #fdfffd;
+    width: calc(50% - 0.5px);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        grid-template-areas:
+            'form'
+            'hours'
+            'map';
+    }
+}
+
+.final-content {
+    background-color: #222222;
+    color: #c9890d;
+}
+
+.final-content .mb-8 {
+    margin-bottom: 8px;
+}
